@@ -15,19 +15,12 @@ const BarbershopItem = ({barbershop}: BarbershopItemProps) => {
         <Card className="min-w-[167px] max-w-[167] rounded-2xl">
             <CardContent className="p-1 py-0">
                 <div className="w-full h-[159px] relative">
-
                     <div className="absolute top-2 left-2  z-50">
-
                     <Badge variant="secondary" className="opacity-90 flex gap-1 items-center top-3 left-3">
-
                         <StarIcon size={12} className="fill-primary text-primary"/>
-                        
                         <span className="text-xs ">5,0</span>
-
                     </Badge>
-
                     </div>
-
                     <Image 
                         alt={barbershop.name}
                         src={barbershop.imageUrl} 
@@ -35,10 +28,9 @@ const BarbershopItem = ({barbershop}: BarbershopItemProps) => {
                             objectFit: "cover"
                         }} 
                         fill 
-                        className="] rounded-2xl" 
+                        className="rounded-2xl" 
                     />
                 </div>
-
 
                 <div className="px-2 pb-3">
                     <h2 className="font-bold mt-2 overflow-hidden text-ellipsis text-nowrap">{barbershop.name}</h2>
